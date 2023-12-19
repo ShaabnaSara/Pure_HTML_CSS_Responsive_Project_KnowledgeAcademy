@@ -1,0 +1,997 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Inter&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: calc(100% - 320px);
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.active {
+  background-color: #f1f1f3;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+
+span {
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+body {
+  font-family: "Be Vietnam Pro", sans-serif;
+  background-color: #f1f1f3;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  background-color: #f7f7f8;
+  border-bottom: 1px solid #f1f1f3;
+}
+
+header .row {
+  gap: 50px;
+  padding: 10px;
+}
+header .logo,
+footer .start-footer .logo {
+  background-color: #ff9500;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  border-radius: 8px;
+}
+
+header svg,
+footer .start-footer svg {
+  width: 40px;
+  height: 40px;
+}
+
+header nav {
+  flex-grow: 1;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+}
+
+header nav ul a {
+  text-transform: capitalize;
+  color: #262626;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+header .auth-btn .row {
+  gap: 30px;
+}
+
+header .auth-btn {
+  width: 214px;
+}
+
+header .auth-btn .sign-up {
+  color: #262626;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+header .auth-btn .log-in {
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+header .auth-btn .active {
+  background-color: #ff9500;
+}
+
+header .burger {
+  display: none;
+}
+
+.hero-title .row {
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 24px;
+}
+
+.title-container .row {
+  flex-wrap: nowrap;
+}
+
+.title-container {
+  position: relative;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.title-container .main-title {
+  background-color: #fcfcfd;
+  border: 1px solid #f1f1f3;
+  position: relative;
+  border-radius: 11px;
+}
+
+.title-container .up-svg {
+  position: absolute;
+  top: -30px;
+  left: -24px;
+  width: 30px;
+  height: 43px;
+}
+
+.title-container .row .svg-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff4e5;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.title-container .row .svg-div svg {
+  width: 34px;
+  height: 34px;
+}
+
+.title-container .row h1 {
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.title-container .row h1 span {
+  color: #ff9500;
+}
+
+.sub-title {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+}
+.sub-title h2 {
+  text-transform: capitalize;
+  font-size: 28px;
+  font-weight: 500;
+  color: #262626;
+}
+
+.sub-title h2 span {
+  text-transform: lowercase;
+}
+
+.title-btn a {
+  text-transform: capitalize;
+}
+
+.title-btn .btn-courses {
+  color: #fff;
+  border-radius: 8px;
+  background-color: #ff9500;
+  padding: 15px 20px;
+  font-weight: 500;
+}
+
+.title-btn .btn-pricing {
+  color: #262626;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 15px 20px;
+  border: 1px solid #f1f1f3;
+  font-weight: 500;
+  text-align: center;
+}
+
+.hero-company .row {
+  flex-wrap: nowrap;
+}
+.hero-company .icons {
+  background-color: #fcfcfd;
+  border-radius: 12px;
+}
+
+.hero-company .icons .logo {
+  display: flex;
+  padding: 30px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  border-left: 3px solid #f1f1f3;
+}
+
+.main-profile {
+  padding: 30px 0px;
+  position: relative;
+}
+
+.main-profile .main-profile-div {
+  display: flex;
+  padding: 100px;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/public/main\ profile.png");
+  width: 100%;
+  height: 790px;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-profile svg {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  left: 50%;
+  border-radius: 50px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  box-sizing: content-box;
+}
+.pricing-title {
+  padding-bottom: 30px;
+}
+
+.benefits-title h1,
+.courses-title h1,
+.testimonails-title h1,
+.pricing-title h1 {
+  text-transform: capitalize;
+  font-size: 30px;
+  font-family: 600;
+  color: #262626;
+}
+
+.benefits-title .title-details p,
+.courses-title .title-details p,
+.testimonails-title .title-details p,
+.pricing-title .title-details p {
+  width: calc(100% - 300px);
+}
+
+.benefits-title .title-details a,
+.courses-title .title-details a,
+.testimonails-title .title-details a {
+  padding: 15px 20px;
+  border-radius: 8px;
+  border: 1px solid #f1f1f3;
+  background-color: #fcfcfd;
+  font-size: 15px;
+  font-weight: 500;
+  color: #262626;
+  text-transform: capitalize;
+}
+
+.benefit-items .row {
+  padding: 10px 0px;
+}
+
+.benefit-items {
+  padding: 30px 0px;
+}
+
+.benefit-items .benefit-item {
+  width: calc((100% - 10px) / 3);
+  padding: 30px;
+  border-radius: 12px;
+  background-color: #fff;
+  min-height: 344px;
+}
+
+.benefit-items .benefit-item .number {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 50px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.benefit-items .benefit-item .title {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.benefit-items .benefit-item .title h3 {
+  text-transform: capitalize;
+}
+
+.benefit-item .benefit-item .title p {
+  font-size: 14px;
+}
+
+.benefit-item .icon {
+  padding-top: 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+.benefit-item .card-icon svg {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #f1f1f3;
+  box-sizing: content-box;
+  background-color: #fcfcfd;
+}
+
+.courses-items .row {
+  gap: 30px;
+}
+
+.courses-items {
+  padding-top: 30px;
+}
+.course-item {
+  width: calc((100% - 30px) / 2);
+  padding: 40px;
+  border-radius: 12px;
+  border: 1px solid #f1f1f3;
+  background: #fff;
+}
+.course-item .course-profile {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+}
+
+.course-item .course1 {
+  background-image: url("../images/courses/c1.png");
+}
+.course-item .course2 {
+  background-image: url("../images/courses/c2.png");
+}
+
+.course-item .course3 {
+  background-image: url("../images/courses/c3.png");
+}
+
+.course-item .course4 {
+  background-image: url("../images/courses/c4.png");
+}
+
+.course-item .course5 {
+  background-image: url("../images/courses/c5.png");
+}
+.course-item .course6 {
+  background-image: url("../images/courses/c6.png");
+}
+
+.course-item .sub-container .sub-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-top: 10px;
+}
+
+.course-item .sub-container .sub-info span {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #f1f1f3;
+  background: #fff;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+.course-item .sub-container .BY {
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.course-item h2 {
+  text-transform: capitalize;
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.course-item p {
+  text-transform: capitalize;
+  font-size: 13px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+.course-item .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  border-radius: 8px;
+  border: 1px solid #f1f1f3;
+  background: #f7f7f8;
+}
+
+.course-item .btn a {
+  text-transform: capitalize;
+  color: #262626;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 5px;
+}
+
+.testimonails {
+  padding-top: 60px;
+}
+
+.testimonails-items {
+  padding-top: 30px;
+}
+
+.testimonails-items .row {
+  gap: 30px;
+}
+
+.testimonail-item {
+  width: calc((100% - 30px) / 2);
+  background-color: #fff;
+}
+
+.testimonail-item .sub-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 30px;
+  justify-content: space-between;
+  background-color: #fcfcfd;
+}
+
+.testimonail-item p {
+  padding: 30px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.testimonail-item .profile-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.testimonail-item .profile-info span {
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.testimonail-item .sub-info .profile-info img {
+  width: 80px;
+  border-radius: 8px;
+}
+
+.testimonail-item .sub-info a {
+  text-transform: capitalize;
+  font-size: 14px;
+  color: #262626;
+  font-weight: 500;
+  background-color: #f7f7f8;
+  border: 1px solid #f1f1f3;
+  padding: 14px 20px;
+  border-radius: 8px;
+}
+
+.pricing {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.pricing .pricing-title .btn {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  background-color: #fff;
+  gap: 15px;
+
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.pricing .pricing-title .btn .month {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 6px;
+  background-color: #ff9500;
+}
+
+.pricing .pricing-title .btn .year {
+  color: #262626;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 100px;
+}
+
+.pricing-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  border-radius: 12px;
+  background-color: #fff;
+  padding: 50px;
+}
+
+.pricing-items .pricing-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: calc((100% - 30px) / 2);
+  border-radius: 12px;
+  border: 1px solid #f1f1f3;
+  background: #fcfcfd;
+
+  padding: 30px 0px;
+}
+
+.pricing-items .pricing-item .title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #fff9f0;
+  border-radius: 6px;
+  border: 1px solid #ffeacc;
+  width: 80%;
+  padding: 12px 22px;
+}
+
+.pricing-items .pricing-item .number {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 50px;
+}
+
+.pricing-items .pricing-item .number .num {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.pricing-items .pricing-item .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 14px 14px 0px 0px;
+  border: 1px solid #f1f1f3;
+  width: 80%;
+  padding: 40px;
+  border-radius: 14px 14px 0px 0px;
+  border: 1px solid #f1f1f3;
+  background: #fff;
+}
+
+.pricing-items .pricing-item .info .title-info {
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+.pricing-item .info .list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.pricing-item .info .info-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #f1f1f3;
+  width: 100%;
+}
+
+.pricing-item .info .info-row svg {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  background: #fff4e5;
+}
+
+.pricing-item .info .info-row .xx {
+  background: #fff;
+  border: 1px solid #f1f1f3;
+}
+
+.pricing-item .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 24px;
+  border-radius: 0px 0px 8px 8px;
+  background: #ff9500;
+  width: 80%;
+}
+
+.pricing-item .btn a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+footer {
+  background-color: #fff;
+}
+
+.start-footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
+  padding: 100px 0px;
+}
+.start-footer .contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+}
+
+.start-footer .contact-info svg {
+  width: 24px;
+  height: 24px;
+}
+
+.end-footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: center;
+  text-transform: capitalize;
+}
+
+.end-footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-transform: capitalize;
+  gap: 10px;
+  padding: 20px 0px;
+}
+
+.end-footer nav a {
+  color: #59595a;
+  font-size: 18px;
+}
+
+.end-footer .socail-icon {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 14px 0px;
+}
+
+.end-footer .socail-icon svg {
+  width: 24px;
+  height: 24px;
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #f1f1f3;
+  background-color: #f7f7f8;
+  box-sizing: content-box;
+}
+/* -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* RESPONSIVE */
+
+@media screen and (min-width: 320px) {
+  .container {
+    width: 100%;
+  }
+
+  header .row {
+    gap: unset;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  header .burger {
+    display: block;
+  }
+
+  .benefits-title h1,
+  .courses-title h1,
+  .testimonails-title h1,
+  .pricing-title h1 {
+    padding-bottom: 10px;
+  }
+
+  .benefits-title .title-details p,
+  .courses-title .title-details p,
+  .testimonails-title .title-details p,
+  .pricing-title .title-details p {
+    width: calc(100% - 10px);
+  }
+
+  .benefits .benefits-title .row,
+  .courses .courses-title .row,
+  .testimonails .testimonails-title .row,
+  .pricing .pricing-title .row {
+    gap: 20px;
+  }
+
+  .title-btn .btn-courses,
+  .title-btn .btn-pricing {
+    padding: 10px 10px;
+  }
+
+  .benefit-items .row {
+    gap: 10px;
+  }
+
+  .course-item,
+  .pricing-items .pricing-item,
+  .testimonail-item,
+  .benefit-items .benefit-item {
+    width: unset;
+  }
+
+  .end-footer {
+    gap: unset;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .container {
+    width: calc(100% - 120px);
+  }
+  header nav {
+    display: none;
+  }
+
+  header .burger {
+    display: block;
+  }
+
+  .hero-title .row {
+    gap: 30px;
+  }
+
+  .title-btn .btn-courses,
+  .title-btn .btn-pricing {
+    padding: 10px 10px;
+  }
+
+  .benefits-title h1,
+  .courses-title h1,
+  .testimonails-title h1,
+  .pricing-title h1 {
+    padding-bottom: 10px;
+  }
+
+  .benefits-title .title-details p,
+  .courses-title .title-details p,
+  .testimonails-title .title-details p,
+  .pricing-title .title-details p {
+    width: calc(100% - 10px);
+  }
+
+  .benefits .benefits-title .row,
+  .courses .courses-title .row,
+  .testimonails .testimonails-title .row,
+  .pricing .pricing-title .row {
+    gap: 20px;
+  }
+
+  .benefit-items .benefit-item {
+    width: unset;
+  }
+
+  .benefit-items .row {
+    gap: 30px;
+  }
+
+  .courses-items .row {
+    gap: 10px;
+  }
+
+  .course-item {
+    width: unset;
+  }
+  .testimonail-item {
+    width: unset;
+  }
+
+  .pricing-items .pricing-item {
+    width: unset;
+  }
+
+  .end-footer {
+    gap: unset;
+    justify-content: unset;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: calc(100%);
+  }
+
+  header nav ul {
+    gap: 20px;
+  }
+
+  header .row {
+    gap: 12px;
+  }
+
+  .hero-company .icons .logo {
+    padding: 5px;
+  }
+
+  .benefits-title,
+  .courses-title,
+  .testimonails-title,
+  .pricing-title {
+    padding: 10px 30px;
+  }
+
+  .benefits-title h1,
+  .courses-title h1,
+  .testimonails-title h1,
+  .pricing-title h1 {
+    padding-bottom: 6px;
+  }
+
+  .benefit-items .benefit-item {
+    min-height: 430px;
+  }
+
+  .benefit-items {
+    padding: 30px 20px;
+  }
+
+  .courses-items,
+  .testimonails-items {
+    padding: 30px 20px;
+  }
+
+  .course-item {
+    min-height: 602px;
+  }
+
+  .testimonails-items .row {
+    gap: 20px;
+  }
+
+  .testimonail-item {
+    min-height: 348px;
+  }
+
+  .testimonail-item .sub-info {
+    padding: 20px;
+  }
+
+  .testimonail-item .sub-info a {
+    padding: 12px;
+  }
+
+  .pricing {
+    padding-top: unset;
+  }
+
+  .start-footer {
+    padding: 100px 10px;
+  }
+
+  .end-footer {
+    gap: 10px;
+  }
+
+
+}
+
+/*@media screen and (min-width: 576px) and (max-width: 768px) {
+}*/
+
+@media screen and (min-width: 992px) {
+  .container {
+    width: calc(100% - 200px);
+  }
+
+  header .row {
+    gap: 20px;
+  }
+
+  .hero-company .icons .logo {
+    padding: 20px 10px;
+  }
+
+  .benefit-items .benefit-item {
+    min-height: 407px;
+  }
+
+  .benefits-title .title-details p,
+  .courses-title .title-details p,
+  .testimonails-title .title-details p {
+    width: calc(100% - 200px);
+  }
+
+  .title-details {
+    padding-top: 20px;
+  }
+  .testimonail-item {
+    min-height: 335px;
+  }
+
+  .end-footer {
+    gap: 20px;
+  }
+
+  /* 
+  header .burger {
+    display: none;
+  }
+
+  header nav {
+    display: block;
+  }*/
+}
+
+@media screen and (min-width: 1200px) {
+}
+
+@media screen and (min-width: 1400px) {
+}
