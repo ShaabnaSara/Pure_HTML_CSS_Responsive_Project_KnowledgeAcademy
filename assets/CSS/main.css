@@ -734,223 +734,207 @@ footer {
 /* -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /* RESPONSIVE */
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   .container {
     width: 100%;
   }
 
-  header .row {
-    gap: unset;
+  .title-container {
+    padding: 30px;
   }
 
-  header nav {
-    display: none;
+  body {
+    padding: 0px 10px;
+  }
+
+  .title-container .row h1 {
+    font-size: 20px;
+  }
+  .title-details {
+    padding-top: 20px;
+  }
+
+  .sub-title {
+    padding: 10px 0px;
+  }
+
+  .sub-title h2 {
+    font-size: 18px;
+  }
+  .hero-title .row {
+    padding: 10px 10px;
+  }
+
+  header .auth-btn {
+    width: unset;
+  }
+
+  .title-btn .btn-pricing,
+  .title-btn .btn-courses {
+    padding: 10px 10px;
+  }
+
+  header .row {
+    gap: unset;
+    padding: unset;
   }
 
   header .burger {
     display: block;
   }
 
-  .benefits-title h1,
-  .courses-title h1,
-  .testimonails-title h1,
-  .pricing-title h1 {
-    padding-bottom: 10px;
+  header nav {
+    display: none;
+  }
+
+  .hero-company .icons {
+    overflow: auto;
   }
 
   .benefits-title .title-details p,
   .courses-title .title-details p,
   .testimonails-title .title-details p,
   .pricing-title .title-details p {
-    width: calc(100% - 10px);
+    width: unset;
+    padding-bottom: 10px;
   }
 
-  .benefits .benefits-title .row,
-  .courses .courses-title .row,
-  .testimonails .testimonails-title .row,
-  .pricing .pricing-title .row {
-    gap: 20px;
-  }
-
-  .title-btn .btn-courses,
-  .title-btn .btn-pricing {
-    padding: 10px 10px;
+  .benefit-items .benefit-item {
+    width: unset;
+    min-width: 100%;
   }
 
   .benefit-items .row {
     gap: 10px;
   }
 
-  .course-item,
-  .pricing-items .pricing-item,
-  .testimonail-item,
-  .benefit-items .benefit-item {
+  .course-item {
     width: unset;
+    min-width: 300px;
   }
 
-  .end-footer {
-    gap: unset;
+  .testimonail-item {
+    width: unset;
+    min-width: 300px;
+  }
+
+  .testimonail-item .sub-info {
+    gap: 30px;
+  }
+
+  .pricing-items .pricing-item {
+    width: unset;
   }
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px) and (max-width: 946px) {
+  body {
+    padding: 0px 10px;
+  }
   .container {
-    width: calc(100% - 120px);
-  }
-  header nav {
-    display: none;
+    width: 100%;
   }
 
-  header .burger {
-    display: block;
+  .title-container .row h1 {
+    font-size: 25px;
   }
 
-  .hero-title .row {
-    gap: 30px;
+  header .row {
+    gap: 10px;
   }
 
-  .title-btn .btn-courses,
-  .title-btn .btn-pricing {
-    padding: 10px 10px;
+  header nav ul {
+    gap: 10px;
   }
 
-  .benefits-title h1,
-  .courses-title h1,
-  .testimonails-title h1,
-  .pricing-title h1 {
-    padding-bottom: 10px;
+  .hero-company .icons .logo {
+    padding: 5px 5px;
   }
 
-  .benefits-title .title-details p,
-  .courses-title .title-details p,
-  .testimonails-title .title-details p,
-  .pricing-title .title-details p {
-    width: calc(100% - 10px);
-  }
-
-  .benefits .benefits-title .row,
-  .courses .courses-title .row,
-  .testimonails .testimonails-title .row,
-  .pricing .pricing-title .row {
-    gap: 20px;
+  .title-details {
+    padding-top: 20px;
   }
 
   .benefit-items .benefit-item {
-    width: unset;
-  }
-
-  .benefit-items .row {
-    gap: 30px;
+    min-height: 407px;
   }
 
   .courses-items .row {
     gap: 10px;
   }
 
-  .course-item {
-    width: unset;
-  }
-  .testimonail-item {
-    width: unset;
+  .courses-items .course-item {
+    min-height: 566px;
   }
 
-  .pricing-items .pricing-item {
-    width: unset;
-  }
-
-  .end-footer {
-    gap: unset;
-    justify-content: unset;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    width: calc(100%);
-  }
-
-  header nav ul {
-    gap: 20px;
-  }
-
-  header .row {
-    gap: 12px;
-  }
-
-  .hero-company .icons .logo {
-    padding: 5px;
-  }
-
-  .benefits-title,
-  .courses-title,
-  .testimonails-title,
-  .pricing-title {
-    padding: 10px 30px;
-  }
-
-  .benefits-title h1,
-  .courses-title h1,
-  .testimonails-title h1,
-  .pricing-title h1 {
-    padding-bottom: 6px;
-  }
-
-  .benefit-items .benefit-item {
-    min-height: 430px;
-  }
-
-  .benefit-items {
-    padding: 30px 20px;
-  }
-
-  .courses-items,
-  .testimonails-items {
-    padding: 30px 20px;
-  }
-
-  .course-item {
-    min-height: 602px;
-  }
-
-  .testimonails-items .row {
-    gap: 20px;
-  }
-
-  .testimonail-item {
+  .testimonails-items .testimonail-item {
     min-height: 348px;
   }
 
   .testimonail-item .sub-info {
-    padding: 20px;
+    padding: 0px 10px;
   }
 
-  .testimonail-item .sub-info a {
-    padding: 12px;
+  .testimonail-item p {
+    width: calc(100% - 20px);
   }
 
-  .pricing {
-    padding-top: unset;
-  }
-
-  .start-footer {
-    padding: 100px 10px;
+  footer .row {
+    gap: 10px;
   }
 
   .end-footer {
-    gap: 10px;
+    gap: 5px;
   }
 }
 
-/*@media screen and (min-width: 576px) and (max-width: 768px) {
-}*/
-
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 946px) and (max-width: 1220px) {
   .container {
+    width: calc(100% - 90px);
+  }
+
+  .hero-company .icons .logo {
+    padding: 10px 10px;
+  }
+
+  .title-details {
+    padding-top: 20px;
+  }
+
+  .benefits-title .title-details p,
+  .courses-title .title-details p,
+  .testimonails-title .title-details p {
     width: calc(100% - 200px);
   }
 
-  header .row {
-    gap: 20px;
+  .benefit-items .benefit-item {
+    min-height: 387px;
+  }
+
+  .course-item .sub-container .sub-info {
+    gap: 5px;
+  }
+
+  .courses-items .row {
+    gap: 10px;
+  }
+
+  .courses-items .course-item {
+    min-height: 524px;
+  }
+
+  .testimonail-item {
+    min-height: 335px;
+  }
+
+  .pricing-items .pricing-item {
+    min-height: 1084px;
+  }
+}
+
+@media screen and (min-width: 957px) and (max-width: 1220px) {
+  .container {
+    width: calc(100% - 100px);
   }
 
   .hero-company .icons .logo {
@@ -958,7 +942,19 @@ footer {
   }
 
   .benefit-items .benefit-item {
-    min-height: 407px;
+    min-height: 390px;
+  }
+
+  .course-item .sub-container .sub-info {
+    gap: 5px;
+  }
+
+  .courses-items .row {
+    gap: 10px;
+  }
+
+  .pricing-items .pricing-item {
+    min-height: 1064px;
   }
 
   .benefits-title .title-details p,
@@ -970,26 +966,36 @@ footer {
   .title-details {
     padding-top: 20px;
   }
+
+  .testimonail-item {
+    min-height: 335px;
+  }
+}
+
+@media screen and (min-width: 1221px) {
+  .hero-company .icons .logo {
+    padding: 20px 10px;
+  }
+  .title-details {
+    padding-top: 20px;
+  }
+
+  .benefit-items .benefit-item {
+    min-height: 390px;
+  }
+  .course-item .sub-container .sub-info {
+    gap: 5px;
+  }
+
+  .courses-items .row {
+    gap: 10px;
+  }
+
   .testimonail-item {
     min-height: 335px;
   }
 
-  .end-footer {
-    gap: 20px;
+  .pricing-items .pricing-item {
+    min-height: 1064px;
   }
-
-  /* 
-  header .burger {
-    display: none;
-  }
-
-  header nav {
-    display: block;
-  }*/
-}
-
-@media screen and (min-width: 1200px) {
-}
-
-@media screen and (min-width: 1400px) {
 }
